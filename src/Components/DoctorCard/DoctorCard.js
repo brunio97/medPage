@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import AppointmentForm from '../AppointmentForm/AppointmentForm';
 import { v4 as uuidv4 } from 'uuid';
 import Popup from 'reactjs-popup';
+import Doctor from './Doctor.svg'
 
 const DoctorCard = ({ name, speciality, experience, clinic, ratings, profilePic }) => {
     const [showModal, setShowModal] = useState(false);
@@ -52,7 +53,7 @@ const DoctorCard = ({ name, speciality, experience, clinic, ratings, profilePic 
         <div className="doctor-card-container">
             <div className="doctor-card-details-container">
                 <div className="doctor-card-profile-image-container">
-                    <img src={profilePic} alt={name} />
+                    <img src={Doctor} alt={name} />
                 </div>
                 <div className="doctor-card-details">
                     <div className="doctor-card-detail-name">{name}</div>
@@ -83,7 +84,7 @@ const DoctorCard = ({ name, speciality, experience, clinic, ratings, profilePic 
                         <div className="doctorbg" style={{ height: '100vh', overflow: 'scroll', backgroundColor: 'white' }}>
                             <div>
                                 <div className="doctor-card-profile-image-container">
-                                    <img src={profilePic} alt={name} />
+                                    <img src={Doctor} alt={name} />
                                 </div>
                                 <div className="doctor-card-details">
                                     <div className="doctor-card-detail-name">{name}</div>

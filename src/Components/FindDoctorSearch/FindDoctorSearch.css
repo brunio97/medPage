@@ -79,7 +79,7 @@
     margin-bottom: 20px;
     box-shadow: rgba(0, 0, 0,.1) 0 - 1px 0 0 inset;
     border-radius: 5px;
-    height: 100vh;
+    height: fit-content;
 }
 
 .doctor-search-box>img {
