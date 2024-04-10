@@ -1,5 +1,4 @@
 {
-  "homepage": "http://brunio97.github.io/medical",
   "name": "react_p",
   "version": "0.1.0",
   "private": true,
@@ -17,12 +16,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"run npm build",
-    "deploy":"gh-pages -d server/build",
-    "build": "react-scripts build && mv build server/",
+    "build": "react-scripts build && move build server/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    
   },
   "eslintConfig": {
     "extends": [
@@ -41,8 +37,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.1.1"
   }
 }
