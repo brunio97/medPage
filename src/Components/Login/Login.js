@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react';
 import './Login.css'
 import { Link, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../config';
-
+import { GetBannerMargin } from "../functions";
 const Login = () => {
-
+  const banM = GetBannerMargin();
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState('');
   const navigate = useNavigate();
@@ -62,7 +62,7 @@ const Login = () => {
 
   return (
     <div>
-      <div className="container">
+      <div className="container" style={{marginTop:banM}}>
         <div className="login-grid">
           <div className="login-text">
             <h2>Login</h2>

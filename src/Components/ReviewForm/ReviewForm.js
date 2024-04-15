@@ -3,10 +3,10 @@ import GiveReviews from './GiveReviews';
 import Popup from 'reactjs-popup';
 import { useNavigate } from 'react-router-dom';
 import "./ReviewForm.css"
-
+import { GetBannerMargin } from "../functions";
 const ReviewForm = () => {
     const [reviewData, setReviewData] = useState({});
-
+    const banM = GetBannerMargin();
     const reportData = [
         {
             serialNumber: 1,
@@ -43,7 +43,7 @@ const ReviewForm = () => {
         //   }
     }, [])
     return (
-        <div style={{ marginTop: '10%' }} className="reviews-container">
+        <div style={{marginTop:banM}} className="reviews-container">
             <h1>Reviews</h1>
             <table className="report-table">
                 <thead>

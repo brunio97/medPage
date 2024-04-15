@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './Sign_Up.css'
 import { Link, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../config';
-
+import { GetBannerMargin } from "../functions";
 const Sign_Up = () => {
+    const banM = GetBannerMargin();
     const [role, setRole] = useState('');
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -121,7 +122,7 @@ const Sign_Up = () => {
     };
 
     return (
-        <div className="container" style={{marginTop:'5%'}}>
+        <div className="container" style={{marginTop:banM}}>
         <div className="signup-grid">
         <div className="signup-form">
          <form method="POST" onSubmit={register}>

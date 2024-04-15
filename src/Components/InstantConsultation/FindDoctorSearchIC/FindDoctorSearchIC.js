@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './FindDoctorSearchIC.css';
 import { useNavigate, Navigate } from 'react-router-dom';
-
+import { FaSearch } from "react-icons/fa";
 
 const initSpeciality = [
     'Dentist', 'Gynecologist/obstetrician', 'General Physician', 'Dermatologist', 'Ear-nose-throat (ent) Specialist', 'Homeopath', 'Ayurveda'
@@ -28,8 +28,7 @@ const FindDoctorSearchIC = () => {
                     {/* <p>Perform a search to see the results.</p> */}
 
                         <input type="text" className="search-doctor-input-box" placeholder="Search doctors, clinics, hospitals, etc." onFocus={() => setDoctorResultHidden(false)} onBlur={() => setDoctorResultHidden(true)} value={searchDoctor} onChange={(e) => setSearchDoctor(e.target.value)} />
-                        
-                        <div className="findiconimg"><img className='findIcon' src={process.env.PUBLIC_URL + '/images/search.svg'} alt=""/></div>
+                        <div className="findiconimg"><FaSearch style={{marginTop:'10px'}}/></div>
                         <div className="search-doctor-input-results" hidden={doctorResultHidden}>
                             {
                                 specialities.map(speciality => <div className="search-doctor-result-item" key={speciality} onMouseDown={() => handleDoctorSelect(speciality)}>

@@ -73,7 +73,7 @@
 .doctor-search-box {
     display: flex;
     align-items: center;
-    width: 430px;
+    width: 50%;
     position: absolute;
     margin-top: 25px;
     margin-bottom: 20px;
@@ -101,6 +101,7 @@
     border-top-right-radius:0;
     border-bottom-right-radius:0;
     border:1px solid rgb(59, 58, 58);
+    margin: 0;
 }
 
 .findiconimg{
@@ -110,7 +111,8 @@
     height: 40px;
     border: 1px solid rgb(59, 58, 58);
     z-index: -99;
-
+    margin: 0;
+    padding: 0;
 }
 .search-doctor-input-results {
     position: absolute;
