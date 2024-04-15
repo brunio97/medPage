@@ -30,7 +30,7 @@ const FindDoctorSearch = () => {
                         <div className="search-doctor-input-results" hidden={doctorResultHidden}>
                             {
                                 specialities.map(speciality => <div className="search-doctor-result-item" key={speciality} onMouseDown={() => handleDoctorSelect(speciality)}>
-                                    <span><img src={process.env.PUBLIC_URL + '/images/search.svg'} alt="" style={{height:"10px", width:"10px"}} width="12" /></span>
+                                    <span><img src={process.env.PUBLIC_URL + '/images/search.svg'} alt="" /></span>
                                     <span>{speciality}</span>
                                     <span>SPECIALITY</span>
                                 </div>)

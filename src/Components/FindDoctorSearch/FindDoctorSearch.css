@@ -116,17 +116,18 @@
 }
 .search-doctor-input-results {
     position: absolute;
-    top: 55%;
+    top: 95%;
     left: 0;
-    width: 100%;
+    width: fit-content;
     z-index: 5;
-    height: 420px;
+    height: fit-content;
     margin-top: 2px;
     border: 1px solid #555;
 }
 
 .search-doctor-result-item {
-    height: 60px;
+    height: fit-content;
+    width: auto;
     display: flex;
     align-items: center;
     background-color: #fff;
